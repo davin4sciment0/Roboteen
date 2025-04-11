@@ -1,0 +1,70 @@
+:root, :root[data-theme='dark']{
+    --cor-preto:#171717;
+    --cor-amarelo:#FFB800;
+    --cor-branco: #D9D9D9;
+
+    --cor-scroll:#000;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    overflow-x: hidden; 
+    background-color: var(--cor-preto);
+    user-select: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn_nav{
+    color: var(--cor-branco);
+    font: normal 1.1vw Arial;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn_nav:hover{
+    font: normal 1.25vw Arial;
+    transition: 0.2;
+}
+
+.btn_borda{
+    border-radius: 0.8vw;
+    border: 0.3vw solid var(--cor-amarelo);
+    background-color: transparent;
+    color: var(--cor-amarelo);
+    font: bold 1vw Arial;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_borda:hover{
+    background-color: var(--cor-amarelo);
+    color: var(--cor-branco);
+    transition: 0.2s;
+    border:none;
+}
+
+.text1{
+    color: var(--cor-branco);
+    font: normal 1vw Arial;
+}
+
+.btn_icon{
+    border-radius: 0.5vw;
+    background-color: var(--cor-amarelo);
+    padding: 0.7vw;
+    text-align: center;
+    display: flex;
+    border: none;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.btn_icon:hover{
+    transition: 1s;
+    padding: 0.9vw;
+}
