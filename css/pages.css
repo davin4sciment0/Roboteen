@@ -31,6 +31,7 @@ nav div{
 
 #l1{
     height: 49.2vw;
+    display: flex;
 }
 
 
@@ -42,6 +43,7 @@ nav div{
     gap: 30vw;
 }
 #logo{
+    z-index: 0;
     margin: 14vw 0 0 2vw ;
     width: 28vw;
     position: absolute;
@@ -89,22 +91,129 @@ nav div{
     justify-content: end;
 }
 
-section img{
+#fundo{
+    z-index: -1;
+    position: absolute;
     margin-top: 9VW;
     width: 100%;
 }
 
 spline-viewer{
-    position: absolute;
-    width: 120vw;
+
+    width: 115vw;
     z-index:1;
 }
 
 /* Sobre */
 
 #l2{
-    background-color: antiquewhite;
-
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor-branco);
     height: 30vw;
+    padding: 3vw 13vw 0vw 13vw;
 }
+
+#l2 div{
+    padding-top: 3vw;
+    width: 40vw;
+    flex-direction: column;
+    display: flex;
+    gap: 0.5vw;
+}
+
+#l2 div h2{
+    text-align: left;
+}
+
+#l2 div p{
+    text-align: left;
+    width: 33vw;
+}
+
+#l2 div button{
+    margin-top: 1vw;
+}
+
+#l2 div img{
+        z-index: 10;
+        width: 6vw;
+        position: absolute;
+        margin-top: 18vw;
+}
+
+#l2 section{
+    z-index: 10;
+    display: flex;
+    width: 30vw;
+}
+
+#inst1{
+    width: 30vw;
+    position: absolute;
+    margin: 0 0 0 4vw
+}
+
+#inst2{
+    width: 20vw;
+    position: absolute;
+    margin: 3vw 0 0 0;
+}
+#inst3{
+    width: 18vw;
+    position: absolute;
+    margin: 11vw 0 0 22vw;
+}
+
+/* Projetos */
+
+#l3{
+    background-color: var(--cor-branco);
+    display: flex;
+    width: 100%;
+    height: 105.3VW;
+}
+
+.dec_l3{
+    width: 23vw;
+    height: 70vw;
+    margin-top: 10vw;
+}
+
+#l3 main{
+    flex-direction: column;
+    border-radius: 2vw;
+    background-color: var(--cor-preto);
+    display: flex;
+    width: 100%;
+}
+
+#l3 main article{
+    display: flex;
+}
+
+#l3 main article figure img{
+   width: 35vw;
+}
+
+#l3 main article div{
+    border-radius: 2vw;
+    width: 30.8vw;
+    height: 34.9vw;
+}
+
+#l3 main article div p {
+    margin: 6vw auto;
+    font-size: 1.2vw;
+    text-align: left;
+    width: 20vw;
+}
+
+#l3 main article div img {
+    position: absolute;
+    display: flex;
+    margin-left: 5vw;
+    width: 4vw;
+}
+
 
