@@ -2,13 +2,25 @@
     --cor-preto:#171717;
     --cor-amarelo:#FFB800;
     --cor-branco: #FFF6F0;
-
+    --cor-cinza: #757575;
     --cor-scroll:#000;
 }
 
 *{
     margin:0;
     padding:0;
+}
+
+::-webkit-scrollbar{
+    background-color: var(--cor-scroll);
+    width:8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-amarelo);
+    border-radius:2em;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--cor-cinza);
 }
 
 body{
